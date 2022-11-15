@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="index.css">
+
+<head>
+    <script>
+        fetch('https://snypp8o6x9.execute-api.us-east-1.amazonaws.com/put-test/counter')
+        fetch('https://zb6c3cks5k.execute-api.us-east-1.amazonaws.com/Get-Function/counter')
+            .then(response => response.json())
+            .then((data) => {
+                document.getElementById('visitorCount').innerText = data
+            })
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="left"></div>
+    <div class="stuff">
+        <br><br>
+        <p><strong><u>Harry Dowsett</u></strong>&nbsp;</p>
+        <p>Location: Canary Wharf, London</p>
+        <p>Mobile: +44 xxxxxxxxxx</p>
+        <p>Email: xxxxxxx@gmail.com</a></p>
+        <p>
+            Visitor count:
+            <span id="visitorCount" />
+        </p>
+        <hr />
+        <br>
+        <p><strong><u>Profile</u></strong></p>
+        <p class="title">For the past year my journey into DevOps has taken off, from being guided into the role by a
+            San Francisco
+            Senior DevOps Engineer/Founder of a DevOps Consultancy, to building my own secure, scalable and reliable
+            projects.</p>
+        <p class="title">Having developed my knowledge of AWS Architecture, Kubernetes and Docker, Linux, Terraform,
+            Python and CI/CD,
+            I have built a well-rounded knowledge of the tools and skills a successful DevOps engineer needs to create
+            excellent Ops infrastructure.</p>
+        <p class="title">Over the years, my drive to enhance my knowledge/skillsets in area&rsquo;s outside of my main
+            job has allowed
+            me to grow, and is no different to my goal of becoming a Senior DevOps Engineer, contributing to the biggest
+            projects in the industry.</p>
+        <br>
+        <p><strong><u>Skills</u></strong></p>
+        <table width="605">
+            <tbody>
+                <tr>
+                    <td width="151">
+                        <p>Linux</p>
+                    </td>
+                    <td width="151">
+                        <p>AWS Solutions Architecture</p>
+                    </td>
+                    <td width="151">
+                        <p>Terraform</p>
+                    </td>
+                    <td width="151">
+                        <p>Docker</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="151">
+                        <p>Kubernetes</p>
+                    </td>
+                    <td width="151">
+                        <p>Python Programming Language</p>
+                    </td>
+                    <td width="151">
+                        <p>CI/CD Automation</p>
+                    </td>
+                    <td width="151">
+                        <p>Security/InfoSec</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&nbsp;</p>
+        <p><strong><u>Personal Project&rsquo;s</u></strong></p>
+        <p><strong>AWS Cloud Resume Challenge</strong></p>
+        <p>Visit Link: <a href="https://harrydowsettresume.co.uk/">www.harrydowsettresume.co.uk</a></p>
+        <p class="title">The goal of this project was to build the architecture of a static website using my
+            CV/Resume with AWS
+            and include a dynamic &lsquo;visitor count&rsquo; to the page using the following tools&hellip;</p>
+        <ul>
+            <li class="title">Terraform and Linux.</li>
+            <li class="title">AWS S3 Static Website.</li>
+            <li class="title">AWS Route 35</li>
+            <li class="title">AWS VPC</li>
+            <li class="title">AWS DynamoDB</li>
+            <li class="title">AWS Lambda</li>
+            <li class="title">AWS API Gateway</li>
+            <li class="title">Python</li>
+            <li class="title">JavaScript</li>
+            <li class="title">HTML</li>
+        </ul>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p><strong><u>Employment History</u></strong></p>
+        <p><strong>Store Ops, Trigo Vision, London</strong></p>
+        <p class="title">Aug 2021 - Present</p>
+        <p class="title">Trigo Vision is a tech company working in the retail sector who have teamed up with Tesco to
+            create a
+            till-less store (like Amazon Fresh).</p>
+        <ul>
+            <li class="title">Managing onsite operations.</li>
+            <li class="title">Communicating with the international tech team to resolving system errors.</li>
+            <li class="title">Fixing and testing the system and product malfunctions.</li>
+            <li class="title">Adding, updating, and correcting product data to the system.</li>
+            <li class="title">Problem solving.</li>
+            <li class="title">Soft Linux use.</li>
+        </ul>
+        <br>
+        <p><strong>Recruitment Consultant, Mason Frank International, London</strong></p>
+        <p class="title">Jan 2021 - June 2021</p>
+        <p class="title">Working as a Contract Recruitment Consultant within the Salesforce sector.</p>
+        <ul>
+            <li class="title">Establishing new and old client relationships to generate business.</li>
+            <li class="title">Excellent market/industry knowledge of upcoming projects.</li>
+            <li class="title">Building key relationships and knowing who the best contractors are in the field.</li>
+            <li class="title">Time management and diary scheduling.</li>
+            <li class="title">Problem solving and perseverance.</li>
+        </ul>
+        <br>
+        <p><strong>The Partnership, Los Angeles, CA</strong></p>
+        <p class="title">February 2020 &ndash; August 2021</p>
+        <p class="title"> During 2020 I remotely interned for an Artist Management company based in Los Angeles
+            alongside my day-to-day
+            job as a Lettings Agent.</p>
+        <ul>
+            <li class="title">Building and managing company and client websites.</li>
+            <li class="title">Admin duties.</li>
+            <li class="title"> Client correspondence.</li>
+            <li class="title">Branding, logo design and online marketing assistance.</li>
+        </ul>
+        <br>
+        <p><strong>E-Commerce </strong></p>
+        <p class="title">October 2017 &ndash; 2018</p>
+        <p class="title">I started and grew a successful E-commerce business while working full-time and studying
+            throughout.</p>
+        <ul>
+            <li class="title">Product and market research.</li>
+            <li class="title">Buyer&rsquo;s psychology.</li>
+            <li class="title">Online sales fundamentals including pricing, packaging, upselling, cross-selling,
+                down-selling.</li>
+            <li class="title">Cashflow and inventory management.</li>
+        </ul>
+        <br>
+</body>
+
+</html>
