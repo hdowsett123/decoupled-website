@@ -1,6 +1,6 @@
-import boto3
+import boto3(region_name='us-east-1')
 import json
-from boto3.dynamodb.conditions(region_name='us-east-1') import Key
+from boto3.dynamodb.conditions import Key
 
 
 dynamodb = boto3.resource('dynamodb')
