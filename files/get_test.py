@@ -1,10 +1,9 @@
 import boto3
 import json
-from boto3.dynamodb.conditions import Key
+from boto3.dynamodb.conditions(region_name='us-east-1') import Key
 
-region = "us-east-1"
 
-dynamodb = boto3.resource('dynamodb', region_name="us-east-1")
+dynamodb = boto3.resource('dynamodb')
 table = dynamodb.Table('cloud-resume-challenge')
 
 def get_count():
