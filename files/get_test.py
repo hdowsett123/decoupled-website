@@ -4,7 +4,7 @@ from boto3.dynamodb.conditions import Key
 
 region = "us-east-1"
 
-dynamodb = boto3.resource('dynamodb'), region_name="us-east-1"
+dynamodb = boto3.resource('dynamodb', region_name="us-east-1")
 table = dynamodb.Table('cloud-resume-challenge')
 
 def get_count():
