@@ -1,11 +1,9 @@
 import boto3
 import json
 from boto3.dynamodb.conditions import Key
-from botocore.config import Config
 
-my_config = Config(region_name = 'us-east-1')
 
-dynamodb = boto3.resource('dynamodb', config=my_config)
+dynamodb = boto3.resource('dynamodb')
 table = dynamodb.Table('cloud-resume-challenge')
 
 def get_count():
@@ -16,7 +14,7 @@ def get_count():
     return count
 
 def lambda_handler(event, context):
-    
+    region = 'us-east-1'
     return {
         'statusCode': 200,
         'headers': {
