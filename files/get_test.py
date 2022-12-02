@@ -6,14 +6,14 @@ from boto3.dynamodb.conditions import Key
 dynamodb = boto3.resource('dynamodb')
 table = dynamodb.Table('cloud-resume-challenge')
 
-def get_count():
+def test_get_count():
     response = table.query(
         KeyConditionExpression=Key('ID').eq('Count')
         )
     count = response['Items'][0]['Visitors']
     return count
 
-def lambda_handler(event, context):
+def test_lambda_handler(event, context):
 
     return {
         'statusCode': 200,
