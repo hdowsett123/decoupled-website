@@ -14,7 +14,7 @@ def get_count():
     return count
 
 def lambda_handler(event, context):
-    region = 'us-east-1'
+
     return {
         'statusCode': 200,
         'headers': {
