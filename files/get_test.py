@@ -23,5 +23,5 @@ def test_lambda_handler(event, context):
             'Access-Control-Allow-Credentials': '*',
             'Content-Type': 'application/json'
         },
-        'body': get_count()
+        'body': test_get_count()
     }
