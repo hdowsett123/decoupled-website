@@ -14,7 +14,7 @@ def test_get_count():
     return count
 
 def test_lambda_handler(event, context):
-    event = true
+    event == true
     return {
         'statusCode': 200,
         'headers': {
