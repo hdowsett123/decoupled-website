@@ -13,7 +13,7 @@ def test_get_count():
     count = response['Items'][0]['Visitors']
     return count
 
-def test_lambda_handler:
+def test_lambda_handler():
 
     return {
         'statusCode': 200,
