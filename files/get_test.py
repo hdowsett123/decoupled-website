@@ -13,8 +13,9 @@ def test_get_count():
     count = response['Items'][0]['Visitors']
     return count
 
+@pytest.fixture
 def test_lambda_handler(event, context):
-    event == true
+
     return {
         'statusCode': 200,
         'headers': {
