@@ -2,18 +2,19 @@ import boto3
 import json
 from boto3.dynamodb.conditions import Key
 
+
 dynamodb = boto3.resource('dynamodb')
 table = dynamodb.Table('cloud-resume-challenge')
 
-def get_count():
+def test_get_count():
     response = table.query(
         KeyConditionExpression=Key('ID').eq('Count')
         )
     count = response['Items'][0]['Visitors']
     return count
 
-def lambda_handler(event, context):
-    
+def test_lambda_handler():
+
     return {
         'statusCode': 200,
         'headers': {
@@ -22,5 +23,5 @@ def lambda_handler(event, context):
             'Access-Control-Allow-Credentials': '*',
             'Content-Type': 'application/json'
         },
-        'body': get_count()
+        'body': test_get_count()
     }

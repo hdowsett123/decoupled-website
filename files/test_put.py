@@ -6,7 +6,7 @@ dynamodb = boto3.resource('dynamodb')
 table = dynamodb.Table('cloud-resume-challenge')
 
 
-def lambda_handler(event, context):
+def test_lambda_handler():
     response = table.update_item(
         Key={
             'ID': 'Count'
